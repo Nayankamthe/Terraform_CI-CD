@@ -10,6 +10,7 @@ pipeline {
         stage('terraform plan') {
             steps {
                 sh 'terraform plan'
+                sh 'echo terraform plan complited'
             }
         }
         stage('action') {
